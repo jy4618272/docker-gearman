@@ -19,10 +19,10 @@ RUN apt-get -y install libpq5 \
  	wget 
 
 # install gearman
-RUN wget https://launchpad.net/gearmand/1.2/1.1.11/+download/gearmand-1.1.11.tar.gz 
-RUN tar -xzvf gearmand-1.1.11.tar.gz
-RUN cd gearmand-1.1.11 && ./configure && make && sudo make install
-RUN rm -rf gearmand-1.1.11*
+RUN wget https://launchpad.net/gearmand/1.2/1.1.12/+download/gearmand-1.1.12.tar.gz 
+RUN tar -xzvf gearmand-1.1.12.tar.gz
+RUN cd gearmand-1.1.12 && ./configure && make && sudo make install
+RUN rm -rf gearmand-1.1.12*
 RUN sudo ldconfig
 
 # set some defaults
